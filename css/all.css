@@ -58,7 +58,7 @@ a {
 .photo {
   width: 90%;
   height: 400px;
-  background-image: url("/images/IMG_4382.jpg");
+  background-image: url("https://raw.githubusercontent.com/YiFanHuang0115/resume/main/images/IMG_4382.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 10%;
@@ -67,7 +67,7 @@ a {
 
 @media (min-width: 1200px) {
   .photo {
-    width: 38%;
+    width: 33%;
   }
 }
 
