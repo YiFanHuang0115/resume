@@ -14,16 +14,11 @@
   content: '';
   display: block;
   width: 100%;
-}
-
-.section:nth-of-type(2)::after {
   clear: both;
 }
 
-@media (min-width: 1200px) {
-  .section:nth-of-type(2)::after {
-    padding-bottom: 160px;
-  }
+.section:nth-of-type(2)::after {
+  height: 120px;
 }
 
 .section:last-of-type {
@@ -66,7 +61,7 @@ a {
   background-image: url("https://raw.githubusercontent.com/YiFanHuang0115/resume/main/images/IMG_4382.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 40%;
+  background-position: 50% 10%;
   border-radius: 10px;
 }
 
@@ -117,7 +112,7 @@ a {
 
 .timeline li::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -129,7 +124,7 @@ a {
 }
 
 .timeline li:last-of-type::after {
-  height: 100%;
+  height: 50%;
 }
 
 .timeline li:nth-of-type(odd) {
@@ -142,7 +137,7 @@ a {
   position: absolute;
   top: 0;
   width: 1px;
-  height: 100%;
+  height: 112%;
   background-color: #ccc;
   right: 0;
   z-index: -1;
@@ -152,11 +147,11 @@ a {
   right: -9px;
 }
 
-.timeline li:nth-of-type(odd) h3::after {
+.timeline li:nth-of-type(odd) h2::after {
   right: 0;
 }
 
-.timeline li:nth-of-type(odd) h3:hover:after {
+.timeline li:nth-of-type(odd) h2:hover:after {
   right: 0;
 }
 
@@ -171,12 +166,13 @@ a {
   left: -10px;
 }
 
-.timeline li:nth-of-type(even) h3:after {
+.timeline li:nth-of-type(even) h2:after {
   left: 0;
 }
 
 .timeline a {
   display: inline-block;
+  text-decoration: none;
   background-color: #fff;
   border: 1px solid #aaa;
   -webkit-box-sizing: border-box;
@@ -196,21 +192,17 @@ a {
           box-shadow: 5px 5px 5px #888;
 }
 
-.timeline a:hover h3, .timeline a:hover p {
+.timeline a:hover h2, .timeline a:hover p {
   color: #fff;
 }
 
-.timeline a:hover p {
-  font-size: 18px;
-}
-
-.timeline h3 {
+.timeline h2 {
   color: #333;
   font-family: 'Noto Sans TC', sans-serif;
   font-weight: 700;
 }
 
-.timeline h3::after {
+.timeline h2::after {
   content: "";
   position: absolute;
   height: 1px;
@@ -222,102 +214,6 @@ a {
 }
 
 .timeline p {
-  font-size: 18px;
-  color: #666;
-  font-family: 'Noto Sans TC', sans-serif;
-}
-
-.timeline2 {
-  padding: 30px 0 30px;
-}
-
-.timeline2 li {
-  margin: 0 auto;
-  width: 50%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 20px 0;
-  position: relative;
-}
-
-.timeline2 li::before {
-  position: absolute;
-  content: '';
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #aaa;
-  z-index: 2;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  left: -80px;
-}
-
-.timeline2 li::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 1px;
-  height: 100%;
-  background-color: #ccc;
-  left: -70px;
-  z-index: -1;
-}
-
-.timeline2 li:last-of-type::after {
-  height: 50%;
-}
-
-.timeline2 a {
-  display: inline-block;
-  background-color: #fff;
-  border: 1px solid #aaa;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 20px;
-  border-radius: 10px;
-  -webkit-box-shadow: 3px 3px 5px #888;
-          box-shadow: 3px 3px 5px #888;
-}
-
-.timeline2 a:hover {
-  background-color: #6fa5f6;
-  /* transform: scale(1.05); */
-  -webkit-transition-duration: 0.8s;
-          transition-duration: 0.8s;
-  -webkit-box-shadow: 5px 5px 5px #888;
-          box-shadow: 5px 5px 5px #888;
-}
-
-.timeline2 a:hover h3, .timeline2 a:hover p {
-  color: #fff;
-}
-
-.timeline2 a:hover p {
-  font-size: 18px;
-}
-
-.timeline2 h3 {
-  color: #333;
-  font-family: 'Noto Sans TC', sans-serif;
-  font-weight: 700;
-}
-
-.timeline2 h3::after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 70px;
-  background-color: #aaa;
-  top: 0;
-  bottom: 0;
-  left: -70px;
-  margin: auto;
-}
-
-.timeline2 p {
-  font-size: 18px;
   color: #666;
   font-family: 'Noto Sans TC', sans-serif;
 }
