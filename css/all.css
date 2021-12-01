@@ -175,7 +175,7 @@ a {
   left: 0;
 }
 
-.timeline a {
+.timeline button {
   display: inline-block;
   background-color: #fff;
   border: 1px solid #aaa;
@@ -187,7 +187,7 @@ a {
           box-shadow: 3px 3px 5px #888;
 }
 
-.timeline a:hover {
+.timeline button:hover {
   background-color: #6fa5f6;
   /* transform: scale(1.05); */
   -webkit-transition-duration: 0.8s;
@@ -196,11 +196,11 @@ a {
           box-shadow: 5px 5px 5px #888;
 }
 
-.timeline a:hover h3, .timeline a:hover p {
+.timeline button:hover h3, .timeline button:hover p {
   color: #fff;
 }
 
-.timeline a:hover p {
+.timeline button:hover p {
   font-size: 18px;
 }
 
@@ -269,7 +269,7 @@ a {
   height: 50%;
 }
 
-.timeline2 a {
+.timeline2 button {
   display: inline-block;
   background-color: #fff;
   border: 1px solid #aaa;
@@ -281,7 +281,7 @@ a {
           box-shadow: 3px 3px 5px #888;
 }
 
-.timeline2 a:hover {
+.timeline2 button:hover {
   background-color: #6fa5f6;
   /* transform: scale(1.05); */
   -webkit-transition-duration: 0.8s;
@@ -290,11 +290,11 @@ a {
           box-shadow: 5px 5px 5px #888;
 }
 
-.timeline2 a:hover h3, .timeline2 a:hover p {
+.timeline2 button:hover h3, .timeline2 button:hover p {
   color: #fff;
 }
 
-.timeline2 a:hover p {
+.timeline2 button:hover p {
   font-size: 18px;
 }
 
