@@ -35,7 +35,6 @@ let autobiography = document.querySelector(".autobiography p");
 
 arrswitch.addEventListener('click', function(){
     const result = classList.toggle(1);
-    console.log(result);
     if(result){
         autobiography.setAttribute("class", "d-block fs-5");
         arrswitch.innerHTML = `<i class="fs-1 fas fa-chevron-circle-up"></i>`;
