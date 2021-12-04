@@ -16,12 +16,12 @@
   width: 100%;
 }
 
-.section:nth-of-type(2)::after {
+.section:nth-of-type(3)::after {
   clear: both;
 }
 
 @media (min-width: 1200px) {
-  .section:nth-of-type(2)::after {
+  .section:nth-of-type(3)::after {
     padding-bottom: 160px;
   }
 }
@@ -48,21 +48,19 @@ a {
   color: #000;
 }
 
-.d-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.photo_card {
+  width: 100%;
 }
 
-.justify-content-evenly {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+@media (min-width: 1200px) {
+  .photo_card {
+    width: 50%;
+  }
 }
 
-.photo {
-  width: 90%;
-  height: 400px;
+.photo_card .photo {
+  max-width: 65%;
+  min-height: 200px;
   background-image: url("https://raw.githubusercontent.com/YiFanHuang0115/resume/main/images/IMG_4382.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -71,27 +69,43 @@ a {
 }
 
 @media (min-width: 1200px) {
-  .photo {
+  .photo_card .photo {
+    min-width: 80%;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo_card .photo {
     width: 33%;
   }
 }
 
 @media (min-width: 576px) {
-  .photo {
+  .photo_card .photo {
     max-width: 45%;
   }
 }
 
+.photo_card a {
+  display: block;
+}
+
 .person-info p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 1200px) {
+  .person-info p {
+    padding-right: 100px;
+  }
 }
 
 .wrap {
   border: 1px solid #ccc;
   width: 100vw;
   padding: 50px 15px 50px;
-  margin: auto;
-  margin-top: 10px;
+  margin: 10px auto;
   border-radius: 20px;
 }
 
@@ -101,6 +115,26 @@ a {
     padding: 50px 80px 50px;
     margin-top: 100px;
   }
+}
+
+.skillList {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .skillList {
+    width: 33.33333%;
+  }
+}
+
+.skillList h3, .skillList h4 {
+  border-bottom: 1px solid #F0BEED;
+  padding: 0 10px 15px;
+  margin: 0px 10px 20px;
+}
+
+.skillList ul, .skillList li {
+  list-style: disc;
 }
 
 .timeline {
@@ -121,7 +155,7 @@ a {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #aaa;
+  background-color: #F0BEED;
   z-index: 2;
   top: 0;
   bottom: 0;
@@ -142,8 +176,8 @@ a {
   position: absolute;
   top: 0;
   width: 1px;
-  height: 100%;
-  background-color: #ccc;
+  height: 120%;
+  background-color: #F0BEED;
   right: 0;
   z-index: -1;
 }
@@ -215,7 +249,7 @@ a {
   position: absolute;
   height: 1px;
   width: 100px;
-  background-color: #aaa;
+  background-color: #F0BEED;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -246,7 +280,7 @@ a {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #aaa;
+  background-color: #F0BEED;
   z-index: 2;
   top: 0;
   bottom: 0;
@@ -260,7 +294,7 @@ a {
   top: 0;
   width: 1px;
   height: 100%;
-  background-color: #ccc;
+  background-color: #F0BEED;
   left: -70px;
   z-index: -1;
 }
@@ -309,7 +343,7 @@ a {
   position: absolute;
   height: 1px;
   width: 70px;
-  background-color: #aaa;
+  background-color: #F0BEED;
   top: 0;
   bottom: 0;
   left: -70px;
@@ -373,7 +407,7 @@ a {
   top: 0;
   border-top: 40px solid transparent;
   border-left: 160px solid #fff;
-  border-right: 160px solid #fff;
+  border-right: 157px solid #fff;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
 }
@@ -385,7 +419,7 @@ a {
 
 .box:hover .text::before {
   border-left: 160px solid #FEB85D;
-  border-right: 160px solid #FEB85D;
+  border-right: 157px solid #FEB85D;
 }
 
 .box:hover .text {
@@ -415,5 +449,72 @@ a {
           transform: rotate(-25deg);
   padding: 8px 50px;
   border: 3px solid red;
+}
+
+#switch .fa-chevron-circle-down {
+  position: relative;
+  width: 30px;
+  -webkit-animation-name: actionSwitch;
+          animation-name: actionSwitch;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes actionSwitch {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: .2;
+  }
+  25% {
+    left: 0px;
+    top: 3px;
+    opacity: .4;
+  }
+  50% {
+    left: 0px;
+    top: 6px;
+    opacity: .6;
+  }
+  75% {
+    left: 0px;
+    top: 10px;
+    opacity: .8;
+  }
+  100% {
+    left: 0px;
+    top: 15px;
+    opacity: 1;
+  }
+}
+
+@keyframes actionSwitch {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: .2;
+  }
+  25% {
+    left: 0px;
+    top: 3px;
+    opacity: .4;
+  }
+  50% {
+    left: 0px;
+    top: 6px;
+    opacity: .6;
+  }
+  75% {
+    left: 0px;
+    top: 10px;
+    opacity: .8;
+  }
+  100% {
+    left: 0px;
+    top: 15px;
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=all.css.map */

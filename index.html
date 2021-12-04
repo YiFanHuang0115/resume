@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="css/all.css" type="text/css">
     <title> Resume </title>
@@ -13,44 +15,84 @@
 <body>
     <div class="wrap">
         <div class="section">
-            <h1 class="text-center mb-5">簡介</h1>
-            <div class="d-flex flex-column flex-xl-row justify-content-xl-center align-items-center align-content-start">
-                <div class="photo col-xl-3 mb-3 mb-xl-0 me-xl-5 "></div>
-                <div class="person-info">
-                    <div class="fs-3 mb-2 text-center text-xl-start">黃 一 凡</div>
-                    <p>學歷： 明新科技大學 化工系 (2002/09~2006/06)</p>
-                    <p>個性： 平靜、隨和，對程式極具好奇心及濃厚的興趣，學習了很久的時間。</p>
-                    <p>地址： 台灣，新竹縣</p>
-                    <p>Email : 01236look@gmail.com</p>
-                    <p>應用技能： HTML5、CSS3、CASS、javascript、jQuery、Figma、github、Restful API、Vue.js。</p>
-                </div>
+            <!-- <h1 class="text-center mb-5">簡介</h1> -->
+            <div class="d-flex flex-column flex-xl-row justify-content-xl-center align-items-center align-items-xl-start ">
+            <div class="photo_card mb-3  d-flex flex-column me-xl-5">
+                <div class="photo mb-2"></div>
+                <div class="mb-2 col-1  "><a href="https://github.com/HsuehFan"><i class="fab fa-github fa-2x text-primary"></i></a></div>
+                <div class="d-flex"><i class="fas fa-map-marker-alt fa-2x  text-danger"></i><spna class="ms-2 fs-5 fw-normal text-dark">Hsinchu, Hsinchu City, Taiwan</spna></div>
             </div>
-
+            
+            <div class="person-info">
+                <h3 class="mb-2">黃 一 梵</h3>
+                <p>平靜、隨和，對程式抱有很大的熱情，樂於學習與解決問題，熱衷學習實用性高的新技術，不放棄任何⾃我成長的機會，自我期許能成為稱職的前端工程師</p>
+                <div class="d-flex align-items-center mb-2" style="font-size: 0.5rem;"><i class="fas fa-briefcase fa-3x "></i><spna class="ms-2 fs-5 fw-normal text-dark">求職職位：前端工程師 </spna></div>
+                <div class="d-flex mb-2" ><i class="fas fa-map-marker-alt fa-2x text-danger"></i><spna class="ms-2 fs-5 fw-normal text-dark">求職地點：台北縣、桃園縣、新竹縣 (台灣北部)</spna></div>
+                <div class="d-flex align-items-center" style="font-size: 0.5rem;"><i class="fas fa-envelope fa-3x  text-warning"></i><spna class="ms-2 fs-5 fw-normal text-dark">E-mail：01236look@gmail.com</spna></div>
+            </div>
+            </div>
         </div>
         <div class="section">
-            <h1 class="text-center">工作經歷</h1>
+            <h1 class="mb-5">Skill</h1>
+            <div class="d-flex flex-column flex-xl-row justify-content-between align-items-center align-items-xl-start flex-xl-wrap">
+                <div class="skillList">
+                    <h4>Front-End</h4>
+                    <ul class="mb-5 fs-5">
+                        <li>使用 CSS3 製作動畫效果</li>
+                        <li>熟悉 SCSS 用法</li>
+                        <li>使用 Bootstrap 5 開發專案</li>
+                        <li>能依照設計稿手刻頁面版型</li>
+                        <li>建立 RWD 響應式網頁</li>
+                        <li>部署 GitHub Pages</li>
+                    </ul>
+                    
+                </div>
+                <div class="skillList ">
+                    <h4>JavaScript</h4>
+                    <ul class="mb-5 fs-5">
+                        <li>會使用 ES6 語言</li>
+                        <li>通過 AJAX / JSON 串接第三方 API</li>
+                        <li>使用 jQuery 做出網頁互動效果</li>
+                    </ul>
+                </div>
+                <div class="skillList">
+                    <h4>Version-Control</h4>
+                    <ul class="mb-5 fs-5">
+                        <li>Git / Github </li>
+                    </ul>
+
+                    <h4>Design Tools</h4>
+                    <ul class="fs-5">
+                        <li>使用 Figma 製作草稿</li>
+                        <li>Photoshop 簡易圖片處理</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h1 >工作經歷</h1>
             <ul class="timeline d-none d-xl-block">
                 <li>
                     <button type="button">
-                        <h3>The One 南園 (2021/04~2021/10)</h3>
+                        <h3>廚師助理 (2021/04~2021/10)</h3>
                         <p title="The One 南園 (2021/04~2021/10)" id="dialog_1" class="fs-5">南園是景觀餐廳，位於新竹一座融合江南庭園與閩式建築特色的園林景點內。我在餐廳擔任廚師助理，也是第一份餐飲業工作，負責餐點的備料、食材處理、貨品清點管理，透過與主廚、餐廳同事的團隊合作完成平日餐點供應及假日活動的料理製作。此份工作較注重耐心、體力及同事間互相支援排班，另外公司也重視教育訓練，辦理每月『員工教育』使員工持續學習餐飲服務方面的新知。 </p>
                     </button>
                 </li>
                 <li>
                     <button type="button">
-                        <h3>遠東新世紀 (2013/02~2019/08)</h3>
+                        <h3>助理工程師 (2013/02~2019/08)</h3>
                         <p title="遠東新世紀 (2013/02~2019/08)" id="dialog_2" class="fs-5">遠東新世紀主要生產是紡織原料、紡織成品，我在的單位主要是酯粒(chips)的成型，生產現場要十分的注意安全，因為都是高溫、危險機械的操作，如：高溫拉條、冷卻切粒、成型。錯誤的操作可能就會造成個人的終生遺憾及公司的損失。工廠十分重視安全管制，所以在此期間學習了以穩定、小心負責的態度進行每個作業。</p>
                     </button>
                 </li>
                 <li>
                     <button type="button">
-                        <h3>達邁科技 (2012/01~2013/01)</h3>	
+                        <h3>品保人員 (2012/01~2013/01)</h3>	
                         <p title="達邁科技 (2012/01~2013/01)" id="dialog_3" class="fs-5">達邁科技是一家製作 PI 薄膜，PI是一種含有醯亞胺基的有機高分子材料，一般主要用途是在軟性電路板。我的工作是品質控制與保證(FQC)，主要工作內容是廠內生產的產品檢驗、等級判別，品保的工作需要對數據嚴謹，對於取樣的樣品保存也要遵守標準的規範進行。</p>
                     </button>
                 </li>
                 <li>
                     <button type="button">
-                        <h3>純文書局 (2007/03~2011/10)</h3>	
+                        <h3>服務員 (2007/03~2011/10)</h3>	
                         <p title="純文書局 (2007/03~2011/10)" id="dialog_4" class="fs-5">從小在家裡開的書局幫忙，工作內容為點貨、上架、排例、退貨，客戶服務…等，於此期間學到最多的是客戶服務，儘可能的站在客戶的立場設想，才可能知道客戶的需求，進行溝通、協調、解決其問題的同時也幫助書店銷售商品。</p>
                     </button>
                 </li>
@@ -58,34 +100,41 @@
             <ul class="timeline2 d-block d-xl-none">
                 <li>
                     <button type="button">
-                        <h3>南園 (2021/04~2021/10)</h3>
+                        <h3>廚師助理 (2021/04~2021/10)</h3>
                         <p title="南園 (2021/04~2021/10)" id="dialog_5">南園是景觀餐廳，位於新竹一座融合江南庭園與閩式建築特色的園林景點內。我在餐廳擔任廚師助理，也是第一份餐飲業工作，負責餐點的備料、食材處理、貨品清點管理，透過與主廚、餐廳同事的團隊合作完成平日餐點供應及假日活動的料理製作。此份工作較注重耐心、體力及同事間互相支援排班，另外公司也重視教育訓練，辦理每月『員工教育』使員工持續學習餐飲服務方面的新知。 </p>
                     </button>
                 </li>
                 <li>
                     <button type="button">
-                        <h3>遠東新世紀 (2013/02~2019/08)</h3>
+                        <h3>助理工程師 (2013/02~2019/08)</h3>
                         <p title="遠東新世紀 (2013/02~2019/08)" id="dialog_6">遠東新世紀主要生產是紡織原料、紡織成品，我在的單位主要是酯粒(chips)的成型，生產現場要十分的注意安全，因為都是高溫、危險機械的操作，如：高溫拉條、冷卻切粒、成型。錯誤的操作可能就會造成個人的終生遺憾及公司的損失。工廠十分重視安全管制，所以在此期間學習了以穩定、小心負責的態度進行每個作業。</p>
                     </button>
                 </li>
                 <li>
                     <button type="button">
-                        <h3>達邁科技 (2012/01~2013/01)</h3>	
+                        <h3>品保人員 (2012/01~2013/01)</h3>	
                         <p title="達邁科技 (2012/01~2013/01)" id="dialog_7">達邁科技是一家製作 PI 薄膜，PI是一種含有醯亞胺基的有機高分子材料，一般主要用途是在軟性電路板。我的工作是品質控制與保證(FQC)，主要工作內容是廠內生產的產品檢驗、等級判別，品保的工作需要對數據嚴謹，對於取樣的樣品保存也要遵守標準的規範進行。</p>
                     </button>
                 </li>
                 <li>
                     <button type="button">
-                        <h3>純文書局 (2007/03~2011/10)</h3>	
+                        <h3>服務員 (2007/03~2011/10)</h3>	
                         <p title="純文書局 (2007/03~2011/10)" id="dialog_8">從小在家裡開的書局幫忙，工作內容為點貨、上架、排例、退貨，客戶服務…等，於此期間學到最多的是客戶服務，儘可能的站在客戶的立場設想，才可能知道客戶的需求，進行溝通、協調、解決其問題的同時也幫助書店銷售商品。</p>
                     </button>
                 </li>
             </ul>
         </div>
         <div class="section">
+            <div class="d-flex align-items-baseline"><h1 class="text-center mb-3 me-2">自傳</h1><div id="switch"><i class="fs-1 fas fa-chevron-circle-down"></i></div></div>
+            <div class="autobiography">
+                <p class="d-none">您好，我叫黃一凡，新竹縣人，在大學的求學並沒有考慮太多，選擇了明新科技大學的化學工程式。直到大三的那一年，才發現自己喜歡的是資訊系，時間上的關係，還是選擇了先完成學業，畢業後在家幫忙了一陣子，才走進相關科系的職場領域工作。但一路上還是喜歡著程式語言，但都自行摸索，買書看，一路上跌跌撞撞，PHP、MySQL、WordPress、WooCommerce、XAMPP、MAMP、Adobe系例、Swift…不勝枚數、用PHP寫留言版、討論區，也用Swift寫過App的實作經驗，但成效都不是很好，後來有幸加入六角學院的課程，在老師不藏私的教導下，終於撥雲見日，真正進入程式設計的入門，學習至今於當然也少不了挫折，但刻服困難後，十分的滿足，並 coding 中追求到大量成就感，目前雖然沒有相關的正職工作經驗，但我會準備足夠的能力，以期進入網頁前端領域的職場，未來也希望能成為一名更好更優秀的前端工程師。若將來有能力則會考慮精進自己成為全端工程師，更進一步的往手機App 設計前進。</p>
+            </div>
+            
+        </div>
+        <div class="section">
             <h1 class="text-center mb-5">切版作業 及 作品</h1>
-            <div class="d-flex flex-column flex-xl-row justify-content-xl-evenly align-items-center">
-                <div class="animate__animated animate__bounceInLeft animate__delay-2s mb-5 mb-xl-0">
+            <div class="d-flex flex-column flex-xl-row justify-content-xl-between align-items-center">
+                <div class="animate__animated animate__bounceInLeft animate__delay-2s mb-5 mb-xl-3">
                     <div class="animate__animated animate__flipInY animate__delay-2s">
                         <a href="https://hsuehfan.github.io/Bootstrap5/" class="box">
                             <img src="images/Xnip2021-11-26_18-12-46.jpg"  alt="">
@@ -96,7 +145,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="animate__animated animate__bounceInDown animate__delay-2s mb-5 mb-xl-0">
+                <div class="animate__animated animate__bounceInDown animate__delay-2s mb-5 mb-xl-3">
                     <div class="animate__animated animate__flipInY animate__delay-2s">
                         <a href="https://hsuehfan.github.io/yoga/" class="box">
                             <img src="images/Xnip2021-11-26_18-15-41.jpg"  alt="">
@@ -107,6 +156,20 @@
                         </a>
                     </div>
                 </div>
+                <div class="animate__animated animate__bounceInRight animate__delay-2s mb-5 mb-xl-3">
+                    <div class="animate__animated animate__flipInY animate__delay-2s">
+                        <a href="#" class="box">
+                            <img src="images/vue_js.png" alt="">
+                            <div class="text">
+                                <h2>旅遊網</h2>
+                                <p>採 Vue.js 及 Bootstrap 框架，是一個旅遊網站，有景點介紹和結帳功能，先使用Figma畫出草稿，再按稿切板，屬於自己設計的作品之一。</p>
+                            </div>
+                            <div class="alertSign">準備中</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-flex flex-column flex-xl-row justify-content-xl-between align-items-center pt-5">    
                 <div class="animate__animated animate__bounceInRight animate__delay-2s">
                     <div class="animate__animated animate__flipInY animate__delay-2s">
                         <a href="#" class="box">
@@ -124,5 +187,6 @@
         <script src='js/jquery.min.js'></script>
         <script src='js/jquery-ui.min.js'></script>
         <script src="js/all.js"></script>
+
     </body>
 </html>
