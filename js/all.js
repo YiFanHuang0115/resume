@@ -31,18 +31,17 @@ $(document).ready(function(){
 
 const arrswitch = document.querySelector('#switch');
 let classList = arrswitch.classList;
-// const arrswitch1 = document.querySelector('#switch .fa-chevron-circle-down');
-// const arrswitch2 = document.querySelector('#switch .fa-chevron-circle-up');
 let autobiography = document.querySelector(".autobiography p");
 
 arrswitch.addEventListener('click', function(){
-    const result = classes.toggle("turn-off");
+    const result = classList.toggle(1);
+    console.log(result);
     if(result){
         autobiography.setAttribute("class", "d-block fs-5");
-        arrswitch.innerHTML = `<i class="fs-1 fas fa-chevron-circle-down"></i>`;
-    } else {
-        autobiography.setAttribute("class", "d-block fs-5");
         arrswitch.innerHTML = `<i class="fs-1 fas fa-chevron-circle-up"></i>`;
+    } else {
+        autobiography.setAttribute("class", "d-none fs-5");
+        arrswitch.innerHTML = `<i class="fs-1 fas fa-chevron-circle-down"></i>`;
     }
 })
 
