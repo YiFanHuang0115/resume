@@ -39,7 +39,7 @@
         padding-bottom: 0px;
         margin-bottom: 0px;
     @include pc {
-        margin-bottom: 782px;
+        margin-bottom: 532px;
         border-bottom: 0px solid transparent;
         }
     }   
@@ -167,7 +167,7 @@ $linkColor: #F0BEED;
                 position: absolute;
                 top: 0;
                 width: 1px;
-                height: 120%;
+                height: 110%;
                 background-color: $linkColor;
                 right: 0;
                 z-index: -1;
@@ -283,18 +283,18 @@ $linkColor: #F0BEED;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 3px 3px 5px #888;
-        &:hover {
-            background-color: #6fa5f6;
-            /* transform: scale(1.05); */
-            transition-duration: 0.8s ;
-            box-shadow: 5px 5px 5px #888;
-            & h3, p{
-                color: #fff;
-            }
-            & p{
-                font-size: 18px;
-            }
-        }
+        // &:hover {
+        //     background-color: #6fa5f6;
+        //     /* transform: scale(1.05); */
+        //     transition-duration: 0.8s ;
+        //     box-shadow: 5px 5px 5px #888;
+        //     & h3, p{
+        //         color: #fff;
+        //     }
+        //     & p{
+        //         font-size: 18px;
+        //     }
+        // }
     }
     & h3{
         color: #333;

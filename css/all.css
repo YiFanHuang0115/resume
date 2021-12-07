@@ -34,7 +34,7 @@
 
 @media (min-width: 1200px) {
   .section:last-of-type {
-    margin-bottom: 782px;
+    margin-bottom: 532px;
     border-bottom: 0px solid transparent;
   }
 }
@@ -183,7 +183,7 @@ a {
   position: absolute;
   top: 0;
   width: 1px;
-  height: 120%;
+  height: 110%;
   background-color: #F0BEED;
   right: 0;
   z-index: -1;
@@ -303,23 +303,6 @@ a {
   border-radius: 10px;
   -webkit-box-shadow: 3px 3px 5px #888;
           box-shadow: 3px 3px 5px #888;
-}
-
-.timeline2 button:hover {
-  background-color: #6fa5f6;
-  /* transform: scale(1.05); */
-  -webkit-transition-duration: 0.8s;
-          transition-duration: 0.8s;
-  -webkit-box-shadow: 5px 5px 5px #888;
-          box-shadow: 5px 5px 5px #888;
-}
-
-.timeline2 button:hover h3, .timeline2 button:hover p {
-  color: #fff;
-}
-
-.timeline2 button:hover p {
-  font-size: 18px;
 }
 
 .timeline2 h3 {
