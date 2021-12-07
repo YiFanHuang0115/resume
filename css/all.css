@@ -13,23 +13,30 @@
 .section::after {
   content: '';
   display: block;
-  width: 100%;
+  width: 300%;
 }
 
-.section:nth-of-type(3)::after {
+.sectionlast-of-type::after {
   clear: both;
 }
 
 @media (min-width: 1200px) {
-  .section:nth-of-type(3)::after {
+  .sectionlast-of-type::after {
     padding-bottom: 160px;
   }
 }
 
 .section:last-of-type {
-  padding-bottom: 32px;
-  margin-bottom: 0px;
   border-bottom: 0px solid transparent;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 1200px) {
+  .section:last-of-type {
+    margin-bottom: 782px;
+    border-bottom: 0px solid transparent;
+  }
 }
 
 * {
@@ -221,23 +228,6 @@ a {
           box-shadow: 3px 3px 5px #888;
 }
 
-.timeline button:hover {
-  background-color: #6fa5f6;
-  /* transform: scale(1.05); */
-  -webkit-transition-duration: 0.8s;
-          transition-duration: 0.8s;
-  -webkit-box-shadow: 5px 5px 5px #888;
-          box-shadow: 5px 5px 5px #888;
-}
-
-.timeline button:hover h3, .timeline button:hover p {
-  color: #fff;
-}
-
-.timeline button:hover p {
-  font-size: 18px;
-}
-
 .timeline h3 {
   color: #333;
   font-family: 'Noto Sans TC', sans-serif;
@@ -407,35 +397,9 @@ a {
   top: 0;
   border-top: 40px solid transparent;
   border-left: 160px solid #fff;
-  border-right: 158px solid #fff;
+  border-right: 159px solid #fff;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
-}
-
-.box:hover {
-  -webkit-transform: translateY(-50px);
-          transform: translateY(-50px);
-}
-
-.box:hover .text::before {
-  border-left: 160px solid #FEB85D;
-  border-right: 157px solid #FEB85D;
-}
-
-.box:hover .text {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#FB8076), to(#FEB85D));
-  background-image: linear-gradient(0deg, #FB8076, #FEB85D);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.box:hover h2 {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
-.box:hover p {
-  color: #fff;
 }
 
 .box .alertSign {
@@ -454,67 +418,5 @@ a {
 #switch .fa-chevron-circle-down {
   position: relative;
   width: 30px;
-  -webkit-animation-name: actionSwitch;
-          animation-name: actionSwitch;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes actionSwitch {
-  0% {
-    left: 0px;
-    top: 0px;
-    opacity: .2;
-  }
-  25% {
-    left: 0px;
-    top: 3px;
-    opacity: .4;
-  }
-  50% {
-    left: 0px;
-    top: 6px;
-    opacity: .6;
-  }
-  75% {
-    left: 0px;
-    top: 10px;
-    opacity: .8;
-  }
-  100% {
-    left: 0px;
-    top: 15px;
-    opacity: 1;
-  }
-}
-
-@keyframes actionSwitch {
-  0% {
-    left: 0px;
-    top: 0px;
-    opacity: .2;
-  }
-  25% {
-    left: 0px;
-    top: 3px;
-    opacity: .4;
-  }
-  50% {
-    left: 0px;
-    top: 6px;
-    opacity: .6;
-  }
-  75% {
-    left: 0px;
-    top: 10px;
-    opacity: .8;
-  }
-  100% {
-    left: 0px;
-    top: 15px;
-    opacity: 1;
-  }
 }
 /*# sourceMappingURL=all.css.map */
