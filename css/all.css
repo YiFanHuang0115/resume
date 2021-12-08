@@ -34,7 +34,7 @@
 
 @media (min-width: 1200px) {
   .section:last-of-type {
-    margin-bottom: 532px;
+    margin-bottom: 0px;
     border-bottom: 0px solid transparent;
   }
 }

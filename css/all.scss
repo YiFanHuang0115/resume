@@ -39,10 +39,11 @@
         padding-bottom: 0px;
         margin-bottom: 0px;
     @include pc {
-        margin-bottom: 532px;
+        margin-bottom: 0px; //有工作經經的情況下，改為 300px;
         border-bottom: 0px solid transparent;
         }
     }   
+    
 
 }
 
